@@ -29,12 +29,9 @@ h1 {
 }
 
 header a{
-    color: #cccccc;
+    color: #888888;
     margin-right: 16px;
     text-decoration: none;
-    border: 1px solid #dddddd;
-    border-radius: 8px;
-    padding:8px;
 }
 
 .portrait{
@@ -43,4 +40,19 @@ header a{
 
 .main-content{
     flex-grow: 1;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+
+}
+
+button {
+
+    cursor: pointer;border:1px solid #888888;
+    background: #888888;
+    color:white;
+    padding: 8px;
+
 }
