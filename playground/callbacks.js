@@ -33,3 +33,18 @@ const add = (a, b, callback) => {
 add(1, 4, (sum) => {
     console.log(sum) // Should print: 5
 })
+
+
+const doWorkCallback = (callabck) =>{
+    setTimeout(() => {
+        callback('this is my error', undefined);
+    }, 2000)
+}
+
+doWorkCallback((error, result)=>{
+    if(error){
+        return console.log(error);
+    }
+    console.log(result);
+
+})
