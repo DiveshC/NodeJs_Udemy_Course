@@ -5,12 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "startdb": "/Users/drchu/mongodb/bin/mongod.exe --dbpath=/Users/drchu/mongodb-data"
+    "startdb": "/Users/drchu/mongodb/bin/mongod.exe --dbpath=/Users/drchu/mongodb-data",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^3.1.10"
+    "bcryptjs": "^2.4.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.3.16",
+    "multer": "^1.4.1",
+    "validator": "^10.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
 }
